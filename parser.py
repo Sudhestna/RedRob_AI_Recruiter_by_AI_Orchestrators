@@ -1,39 +1,6 @@
 from langchain_core.documents import Document
 import json
 
-# def json_to_documents(json_data: list):
-#     documents = []
-#     for data in json_data:
-#         data_in_str=""
-#         for k,v in data.items():
-#             if isinstance(v, list):
-#                 list_to_string= ', '.join(str(item) for item in v)
-#                 data_in_str+= f"{k}: {list_to_string}\n"
-#             else:
-#                 data_in_str+=f"{k}: {v}\n"
-        
-#         documents.append(Document(page_content=data_in_str))
-
-#     return documents
-
-
-# def json_to_documents(json_data):
-
-#     documents = []
-
-#     for resume in json_data:
-
-#         documents.append(
-#             Document(
-#                 page_content=json.dumps(resume, indent=2)
-#             )
-#         )
-
-#     return documents
-
-
-# from langchain_core.documents import Document
-
 def json_to_documents(json_data):
 
     documents = []
